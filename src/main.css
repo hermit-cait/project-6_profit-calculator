@@ -1,0 +1,130 @@
+/* Color variables */
+:root {
+  --primary-color: #7633f9;
+  --secondary-color: #ffc107;
+  --light-color: #f5f5f5;
+  --dark-color: #08023a;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --btc-color: #f2a400;
+  --eth-color: #626bd9;
+  --ltc-color: #7d8fb3;
+  --xrp-color: #0c1818;
+  --uni-color: #ff007a;
+}
+
+/* Global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--dark-color);
+}
+
+/* Heading and container styling */
+h1 {
+  font-size: 5rem;
+  color: var(--light-color);
+}
+
+.container {
+  width: 600px;
+  margin-top: 5vh;
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+/* Form styling */
+form {
+  width: 50%;
+}
+form .btn {
+  color: var(--light-color);
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.form-group input,
+.form-group select {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.select-market-price {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  gap: 10px;
+  margin-bottom: 0.7rem;
+}
+
+label[for=select-market-price] {
+  font-size: 0.8rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+label[for=select-market-price]:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+#select-market-price {
+  outline: none;
+}
+
+.exit-price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Results section styling */
+.result {
+  width: 50%;
+  background-color: var(--light-color);
+  padding: 20px;
+  border-radius: 25px;
+  height: 500px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .container {
+    width: 95%;
+    margin: 2rem 0.5rem;
+  }
+  form {
+    width: 40%;
+  }
+  .result {
+    width: 60%;
+    height: 600px;
+  }
+  .exit-price {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=main.css.map */

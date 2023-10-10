@@ -63,15 +63,15 @@
             />
           </div>
           <div class="form-group">
-            <span class="SelectMarket-price">
-              <input type="checkbox" id="SelectMarket-price" />
-              <label for="SelectMarket-price">Market price $</label>
+            <span class="select-market-price">
+              <input type="checkbox" id="select-market-price" />
+              <label for="select-market-price">Market price $</label>
             </span>
 
             <input
               type="number"
-              name="Market-price"
-              id="Market-price"
+              name="market-price"
+              id="market-price"
               placeholder="Enter Market price"
               value="000000"
               disabled
@@ -102,7 +102,7 @@
     <script>
       const container = document.querySelector(".container"),
         sellPrice = document.getElementById("sell-price"),
-        selectMarketPrice = document.getElementById("SelectMarket-price"),
+        selectMarketPrice = document.getElementById("select-market-price"),
         cryptoCurrency = document.getElementById("crypto-select");
 
       selectMarketPrice.addEventListener("change", () => {

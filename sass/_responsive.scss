@@ -1,0 +1,20 @@
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .container {
+    width: 95%;
+    margin: 2rem 0.5rem;
+  }
+  form {
+    width: 40%;
+  }
+  .result {
+    width: 60%;
+    height: 600px;
+  }
+  .exit-price {
+    grid-template-columns: 1fr;
+  }
+}

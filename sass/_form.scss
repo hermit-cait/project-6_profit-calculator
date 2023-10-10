@@ -1,0 +1,52 @@
+/* Form styling */
+form {
+  width: 50%;
+
+  .btn {
+    color: var(--light-color);
+    margin-top: 2rem;
+  }
+}
+.form {
+  &-group {
+    margin-bottom: 1rem;
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    input,
+    select {
+      border: 1px solid #eee;
+      border-radius: 5px;
+      padding: 0.5rem;
+      width: 100%;
+      &:focus {
+        outline: 1px solid var(--primary-color);
+      }
+    }
+  }
+}
+.select-market-price {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  gap: 10px;
+  margin-bottom: 0.7rem;
+}
+label[for="select-market-price"] {
+  font-size: 0.8rem;
+  margin: 0;
+  cursor: pointer;
+}
+label[for="select-market-price"]:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+#select-market-price {
+  outline: none;
+}
+.exit-price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
